@@ -1,5 +1,5 @@
 
-from rest_framework import viewsets, status
+from rest_framework import viewsets
 
 from .models import ApiUser, Warehouse, Products
 from .permisions import IsCustomerOrReadOnly, IsSupplierOrReadOnly

@@ -1,11 +1,10 @@
 
-from django.db.models import F
-from rest_framework import serializers, validators, status
-from rest_framework.decorators import action
-from rest_framework.response import Response
+
+from rest_framework import serializers
+
 
 from .models import ApiUser, Role, Products, Warehouse
-from .permisions import IsSupplierOrReadOnly, IsCustomerOrReadOnly
+
 
 
 class RoleSerializer(serializers.ModelSerializer):

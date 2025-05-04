@@ -16,7 +16,6 @@ class Role(models.Model):
 class ApiUser(AbstractUser):
     role = models.ForeignKey(Role, on_delete=models.SET_NULL, null=True, blank=True, related_name='users')
 
-# Create your models here.
 
 
 
